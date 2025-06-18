@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: 'Merriweather', serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav 
+{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+}
+
+nav a 
+{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+nav a::after 
+{
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: #00fff0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+nav a:hover 
+{
+  color: #00fff0;
+}
+
+nav a:hover::after 
+{
+  width: 100%;
+}
+
+
+h1 
+{
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+h2 
+{
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+
+p 
+{
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+
+.skills_category h3 
+{
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #ffffff;
+}
+
+.skill_tags 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.tag 
+{
+  background: rgba(255,255,255,0.05);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: 0.4s ease;
+}
+
+.tag:hover 
+{
+  background: #00fff0;
+  color: #000;
+  transform: scale(1.05);
+}
+
+
+.contact_buttons 
+{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact_icon 
+{
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.contact_icon:hover 
+{
+  color: #00fff0;
+  transform: scale(1.2);
+}
+
+
+section:last-of-type a 
+{
+  color: #00fff0;
+  text-decoration: none;
+}
+
+section:last-of-type a:hover 
+{
+  text-decoration: underline;
+}
+
+footer {
+  background: linear-gradient(145deg, #101c1f, #1b2b30);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Merriweather', serif;
+  color: white;
+  margin: 2rem auto;
+  max-width: 85%;
+  height: 60px;
+  margin-left: auto;      /* AND THIS */
+  margin-right: auto;  
+}
+
+
+footer a {
+  text-decoration: none;
+}
+
+footer i {
+  font-size: 1.8rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer i:hover {
+  color: #00bcd4;
+  transform: scale(1.15);
+}

@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body 
-{
+body {
   font-family: 'Merriweather', serif;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #ffffff;
+  font-size: 1.1rem;        
+  line-height: 1.7;
+  max-width: 900px;         
+  margin: 0 auto;           
   padding: 2rem;
   text-align: center;
 }
@@ -79,11 +84,11 @@ h2
 
 p 
 {
-  max-width: 700px;
-  margin: auto;
+  max-width: 750px;
+  margin: 1rem auto;
   line-height: 1.7;
   color: #e0e0e0;
-  margin-bottom: 2rem;
+  /*margin-bottom: 2rem;*/
 }
 
 
@@ -188,3 +193,113 @@ footer i:hover {
   color: #00bcd4;
   transform: scale(1.15);
 }
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.2rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+nav a::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background: #00fff0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #00fff0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
+h1 
+{
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+
+p {
+
+  max-width: 750px;
+  margin: auto;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+footer 
+{
+  background: linear-gradient(145deg, #101c1f, #1b2b30);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: 'Merriweather', serif;
+  color: white;
+  margin: 2rem auto;
+  max-width: 85%;
+  height: 100px;
+}
+
+footer a 
+{
+  text-decoration: none;
+}
+
+footer i 
+{
+  font-size: 1.8rem;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer i:hover 
+{
+  color: #00bcd4;
+  transform: scale(1.15);
+}
+
+.contact_buttons 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-page p 
+{
+  max-width: 750px;         
+  margin: 1.5rem auto;       
+  line-height: 1.7;          
+  color: #e0e0e0;
+  text-align: justify;       
+  text-align-last: left;     
+}
+

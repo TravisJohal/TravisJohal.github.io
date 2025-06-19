@@ -426,15 +426,66 @@ h2
   margin: 0.25rem 0;
 }
 
-.about-name a 
+.about-left .about-name a 
 {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
 
+.about-left .about-name a:hover 
+{
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+
 .about-name a:hover 
 {
   text-decoration: underline;
   color: #00bcd4;
+}
+
+.traits 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  max-width: 750px;
+  margin-top: 1rem;
+}
+
+.traits span 
+{
+  padding: 0.5rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease;
+}
+
+.traits span:hover 
+{
+  background: #00fff0;
+  color: #000;
+  transform: scale(1.05);
+}
+.about-right h2 
+{
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.traits 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* aligns tags to the left */
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-left: 0;
 }

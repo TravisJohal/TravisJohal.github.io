@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Travis Johal | Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
   <nav>
@@ -14,27 +19,60 @@
 
   <h2>Projects</h2>
   <p>Here are some projects I’ve worked on:</p>
+  <div class="projects-container">
 
-  <section class="project1">
-    <h3>Autonomous Rasberry Pi Car</h3>
-     <img src="images/robot-car.jpg" alt="Autonomous Raspberry Pi Car" width="400" />
+    <section class="project">
+      <h3>Autonomous Rasberry Pi Car</h3>
+      <img 
+        src="images/raspberryPi.jpg" 
+      alt="Autonomous Raspberry Pi Car" 
+      class="project-img" 
+      />
+      <p>
+        For this project, a Raspberry Pi acts as the central brain, continuously reading distance measurements from onboard ultrasonic sensors to “see” obstacles in its path. Those sensor readings feed into a Python program that implements a simple obstacle-avoidance routine: when an object comes within a preset threshold, the code sends PWM signals through a motor-driver board to two DC motors, slowing, stopping, or steering the car away from hazards—all without human intervention.
+      </p>
+    </section>
     <p>
-      Designed and built and autonomous car powered by a Rasberry Pi. The car uses ultrasonic sensors and Python based algorithms in order to avoid obstacles. 
+    I worked in a team to create a website for Space AutoCare, a local car-detailing shop. We designed and built a site to showcase their full range of detailing services, integrate an intuitive online booking form, and deliver a fast, responsive experience across desktop and mobile devices.
     </p>
-    <ul>
-        <li><strong>Hardware:</strong> Raspberry Pi, ultrasonic sensors, DC motors, motor driver</li>
-        <li><strong>Software:</strong> Python,GPIO libraries</li>
-    </ul>
-  </section>
+    <section class="project">
+      <h3>Space Autocare Website</h3>
+      <img
+        src="images/space-autocare.jpg"
+        alt="Space Autocare logo"
+        class="project-img"
+      />
+      <p>
+        
+      </p>
+    </section>
+    <section class="project">
+      <h3>StudentTime (coming soon..)</h3>
+      <img
+        src="images/studenttime.jpg"
+        alt="Screenshot of StudentTime Planner"
+        class="project-img"
+      />
 
-  <section class="project">
-    <h3>Need to choose still</h3>
-  </section>
-  <h3 class="coming-soon">Coming soon...</h3>
-    <h3>StudentTime</h3>
-    <p>
-      StudentTime is a all in one planner for students. From academic planning to financial tracking, StudentTime helps students efficiently organize their schedules, manage tasks, and stay on top of their responsibilities throughout the semester.
-    </p>
-  </section>
+      <p>
+        StudentTime is a all in one planner for students. From academic planning to financial tracking, StudentTime helps students efficiently organize their schedules, manage tasks, and stay on top of their responsibilities throughout the semester. More infromation coming soon...
+      </p>
+    </section>
+    </div>
+    <footer>
+    <div class="contact_buttons">
+        <a href="https://github.com/TravisJohal" target="_blank">
+            <i class="fab fa-github contact_icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/travis-johal-570478347
+    " target="_blank">
+              <i class="fab fa-linkedin contact_icon"></i>
+         </a>
+          <a href="mailto:travjohal@gmail.com">
+              <i class="fas fa-envelope contact_icon"></i>
+          </a>
+
+      </div>
+    </footer>
 </body>
 </html>

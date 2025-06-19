@@ -369,3 +369,72 @@ h2
 {
   margin-bottom: 2rem;  
 }
+
+.about-container 
+{
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  align-items: flex-start;
+}
+
+.about-left 
+{
+  flex: 1;
+  text-align: center;
+}
+
+.about-logo 
+{
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.about-right 
+{
+  flex: 2;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+}
+.about-right p 
+{
+  margin-bottom: 1.5rem;
+}
+
+.about-name 
+{
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.about-name h2 
+{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.about-name p 
+{
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 0.25rem 0;
+}
+
+.about-name a 
+{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-name a:hover 
+{
+  text-decoration: underline;
+  color: #00bcd4;
+}
